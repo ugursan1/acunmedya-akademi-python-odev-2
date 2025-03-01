@@ -1,10 +1,7 @@
-
-import math
-
 def asalSayi_Mi(sayi):
     if sayi < 2:
         return False
-    for i in range(2, int(math.sqrt(sayi) + 1)):
+    for i in range(2, sayi):
          if sayi % i == 0:
             return False
     return True
